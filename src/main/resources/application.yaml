@@ -1,0 +1,11 @@
+spring:
+  datasource:
+   password: color
+   username: color
+   url: jdbc:mysql://localhost:3306/color
+
+logging:
+  level:
+    root: warn
+    '[com.promineo]': debug
+    

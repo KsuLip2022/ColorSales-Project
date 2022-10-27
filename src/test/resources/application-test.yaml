@@ -1,0 +1,9 @@
+spring:
+  datasource:
+       url: jdbc:h2:mem:color;mode=MYSQL
+
+logging:
+  level:
+    root: warn
+    '[com.promineo]': debug
+    
