@@ -36,33 +36,7 @@ class FetchColorTest extends FetchColorSupport{
   @Test
   void testDb() {   
   }
- // @Disabled
-  
-  
-/*  @Test
-  void testThatColorsAreReturnedWhenAValidBrandAndTypeAreSupplied() {
-    // Given: a valid brand, type and URI
-          ColorBrand brand = ColorBrand.NEVSKAYA_PALITRA;
-          String type = "Watercolor";
-          String uri = String.format("%s?brand=%s&type=%s",
-             getBaseUri(), brand, type);
-          
-    // When: a connection is made to the URI                 
-          ResponseEntity<List<Color>> response = 
-              getRestTemplate().exchange(uri, HttpMethod.GET, null, 
-                  new ParameterizedTypeReference<>() {});        
 
-          
-    // Then: a success (OK - 200) status code is returned
-      assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-       
-    // And: the actual list returned is the same as the expected list
-         List<Color> actual = response.getBody();
-         List<Color> expected = buildExpected();
-         
- //        actual.forEach(color -> color.setBrandPK(null));         
-          assertThat(actual).isEqualTo(expected); 
-  }*/
   @Test
   void testThatAnErrorMessageIsReturnedWhenAValidTypeIsSupplied() {
     // Given: a valid brand, type and URI
